@@ -10,7 +10,7 @@ export default function App() {
   const [messages, setMessages] = useState([]);
   const [error, setError] = useState();
   const messageHistory = useRef();
-  const chat = useMemo(() => new Chat(123, false), []);
+  const chat = useMemo(() => new Chat(123, true), []);
 
   const sendMessage = (e) => {
     e.preventDefault();
