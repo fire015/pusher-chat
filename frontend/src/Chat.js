@@ -31,7 +31,7 @@ export default class Chat {
   }
 
   send(message) {
-    this.channel.trigger("client-chatMessage", { message });
+    this.channel.trigger("client-chatMessage", { message, timestamp: String(Date.now()) });
   }
 
   getUser(userID) {

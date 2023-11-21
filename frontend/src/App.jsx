@@ -10,6 +10,8 @@ export default function App() {
   const [messages, setMessages] = useState([]);
   const [error, setError] = useState();
   const messageHistory = useRef();
+
+  // Set a unique ID here to have multiple chat rooms
   const chat = useMemo(() => new Chat(123, true), []);
 
   const sendMessage = (e) => {

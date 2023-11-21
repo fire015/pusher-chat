@@ -39,3 +39,5 @@ Visit http://localhost:5173/ (open multiple browser tabs to simulate multiple us
 ## Persistence
 
 If you need to persist messages, add a webhook in Pusher (triggered by client events) and point to the backend server `/pusher/webhook` endpoint.
+
+Check the `lambda` folder for an example of an AWS Lambda function that receives messages from a Pusher webhook and stores them in DynamoDB.
