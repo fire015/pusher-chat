@@ -1,4 +1,6 @@
-export default function OutgoingMessage({ message }) {
+import { memo } from "react";
+
+const OutgoingMessage = memo(function OutgoingMessage({ message }) {
   return (
     <div className="outgoing_msg">
       <div className="sent_msg">
@@ -7,4 +9,6 @@ export default function OutgoingMessage({ message }) {
       </div>
     </div>
   );
-}
+});
+
+export default OutgoingMessage;

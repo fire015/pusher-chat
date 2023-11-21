@@ -1,4 +1,6 @@
-export default function IncomingMessage({ message, name }) {
+import { memo } from "react";
+
+const IncomingMessage = memo(function IncomingMessage({ message, name }) {
   return (
     <div className="incoming_msg">
       <div className="incoming_msg_img">
@@ -12,4 +14,6 @@ export default function IncomingMessage({ message, name }) {
       </div>
     </div>
   );
-}
+});
+
+export default IncomingMessage;
